@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CleanConnect</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="app-container">
+
+<div class="device">
+  <div class="notch"></div>
+
+  <div class="screen" id="screen">
+
+    <div class="splash-screen" id="splash">
+      <div class="mark">🌍</div>
+      <h1>CleanConnect</h1>
+      <p>Cleaner communities, together</p>
+    </div>
+
+    <div class="app-content" id="appContent">
+
+      <nav class="navbar">
+    <div class="logo">🌍 CleanConnect</div>
+
+    <div class="profile-icon">
+        👤
+    </div>
+</nav>
+
+<div class="welcome-card">
+    <h3>Welcome Back</h3>
+    <p>Together we've helped remove 45 illegal dumping sites.</p>
+</div>
+
+
+      <section class="hero" id="top">
+        <div class="hero-content">
+          <h1>Stop Illegal Dumping</h1>
+          <p>Report waste, protect your community and help create cleaner, healthier neighbourhoods.</p>
+          <a href="#report" class="btn">Report Now</a>
+        </div>
+      </section>
+
+      <section class="stats">
+        <div class="stat"><h2 id="statReports">120</h2><p>Reports Submitted</p></div>
+        <div class="stat"><h2>45</h2><p>Sites Cleaned</p></div>
+        <div class="stat"><h2>300+</h2><p>Members</p></div>
+      </section>
+
+      <main>
+
+    <section id="report" class="report-section">
+      <h2>Report a Dumping Site</h2>
+
+      <form id="reportForm">
+        <label for="location">Location</label>
+        <input id="location" type="text" placeholder="Enter location" required>
+
+        <label for="photo">Upload Image</label>
+        <input id="photo" type="file" accept="image/*">
+
+        <label for="pollutionType">Type of Pollution</label>
+        <select id="pollutionType">
+          <option>Household Waste</option>
+          <option>Construction Rubble</option>
+          <option>Chemical Waste</option>
+          <option>Plastic Pollution</option>
+          <option>Sewage Spill</option>
+        </select>
+
+        <label for="description">Description</label>
+        <textarea id="description" placeholder="Describe the issue..." required></textarea>
+
+        <label for="comments">Community Comments</label>
+        <textarea id="comments" placeholder="Additional comments..."></textarea>
+
+        <button type="submit">Submit Report</button>
+        <p class="form-note">Reports are saved on this device so you can track their status below.</p>
+      </form>
+
+      <div class="status-section">
+        <h2>Track Reports</h2>
+        <div id="statusList"></div>
+      </div>
+    </section>
+
+    <section id="map">
+      <h2>Community Dumping Map</h2>
+      <div class="map-placeholder">🗺️ Interactive map coming soon</div>
+    </section>
+
+    <section id="about">
+      <h2>About CleanConnect</h2>
+      <p>CleanConnect helps communities report pollution, illegal dumping and environmental hazards while connecting residents with the authorities responsible for cleaning them up.</p>
+    </section>
+
+    <section id="contact" class="contacts-section">
+      <h2>Contact Authorities</h2>
+
+      <div class="contact-card">
+        <h3>Municipality</h3>
+        <p>📞 0800 123 456</p>
+      </div>
+
+      <div class="contact-card">
+        <h3>Environmental Affairs</h3>
+        <p>📧 environment@cleanconnect.org</p>
+      </div>
+
+      <div class="contact-card">
+        <h3>Community Support</h3>
+        <p>💬 support@cleanconnect.org</p>
+      </div>
+    </section>
+
+      </main>
+
+      <footer>
+        <p>© 2026 CleanConnect</p>
+        <p>Cleaner Communities • Better Future • by Themba Mngomezulu</p>
+      </footer>
+
+    </div>
+  </div>
+
+  <button class="fab">📸</button>
+  <nav class="bottom-nav">
+    <a href="#top" class="active" title="Home">🏠 Home</a>
+    <a href="#report" title="Report">📸 Report</a>
+    <a href="#map" title="Map">🗺️ Map</a>
+    <a href="#contact" title="Contact">☎️ Contact</a>
+  </nav>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
